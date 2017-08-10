@@ -8,50 +8,52 @@
 		<link rel="stylesheet" href="">
 	</head>
 	<body>
-  		<header class="page-header">
-		  	<div class="logo">
-		  		<img src="" title="Логотип" width="155" height="65">
-		  	</div>
+  		<header class="main-header">
 		  	<nav class="main-menu">
-			  	<ul>
-				  	<li><a class="menu-item" href="#">Каталог</a></li>
-				  		<!--Подменю--> 
-					<li><a class="menu-item" href="#">Доставка и оплата</a></li>
-					<li><a class="menu-item" href="#">О компании</a></li>
-					<li><a class="btn btn-header btn-search" href="#">Поиск</a></li>
-						<!--форма поиска--> 
-					<li><a class="btn btn-header btn-authorization" href="#">Вход</a></li>
-						<!--форма авторизации-->
-					<li><a class="btn btn-header btn-product" href="#">Пусто</a></li>
-				</ul>
+		  		<a class="main-header-logo">
+		  			<img src="img/index-logo.svg" width="155" height="65" alt="Логотип магазина мороженого Глейси">
+		  		</a>
+			  	<div class="main-navigation-wrapper">
+			  		<div class="container">
+					  	<ul class="site-navigation">
+						  	<li><a class="" href="#">Каталог</a></li>
+							<li><a class="" href="#">Доставка и оплата</a></li>
+							<li><a class="" href="#">О компании</a></li>
+						</ul>
+						<ul class="user-navigation">
+							<li><a class="btn" href="#">Поиск</a></li>
+							<li><a class="btn" href="#">Вход</a></li>
+							<li><a class="btn" href="#">Пусто</a></li>
+						</ul>
+					</div>
+				</div>
 			</nav>
-			<div class="work-time-phone">
-				С 10 до 20, ежедневно<br> 
+			<div class="work-info">
+				С 10 до 20, ежедневно 
 				<b>8 812 450 25 25</b>
 			</div>    
 		</header>
-		<!--Вопросы по Хеадеру:
-			1) Как строить меню ?--> 
 		<main>
-			<!--Слайдер
+			<!--
 
 			<h1>Крем-брюле и пломбир<br>с малиновым джемом</h1>
 			<a class="btn" href="#">Давайте оба!</a>
 			
 			-->
-			<div class=""> <!-- <ARTICLE> ???--> 
-				<div class=""> <!-- <SECTION> ???-->
+			<section class="specially-offers">
+				<h2>Специальные предложения</h2>
+				<article class="specially-offer">
 					<h2>Малинка даром!</h2>
 					<p>При покупке 2 кг любого фрутового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<a class="btn" href="">Хочу варение!</a>
-				</div> <!-- </SECTION> ???-->
-				<div class=""> <!-- <SECTION> ???-->
+				</article>
+				<div class="specially-offer">
 					<h2>Шоколадки даром!</h2>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<a class="btn" href="#">Хочу шоколадки!</a>
-				</div> <!-- </SECTION> ???-->
-			</div> <!-- </ARTICLE> ???-->
-			<div class="popular-and-price"> <!-- <ARTICLE> ???-->
+				</article>
+			</section>
+			<section class="popular-and-price">
 				<div class="">
 					<b>310 р/кг</b>
 					Сливочное с апельсиновым джемом и цитрусовой стружкой
@@ -68,33 +70,30 @@
 					<b>415 р/кг</b>
 					Сливочное крем-брюле с карамельной подливкой
 				</div>
-			</div> <!-- </ARTICLE> ???-->
-			<div class=""> <!-- <SECTION> ???-->
+			</section>
+			<article class="">
 				<h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
 				<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>  
 				<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 				<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>  
 				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-			</div> <!-- </SECTION> ???-->
-			<section class="">
+			</article>
+			<article class="">
 				<h4>Новое в нашем блоге</h4>
-				<article>
-					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-				</article>
-			</section>
-			<section class="">
+				<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+			</article>
+			<article class="">
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p> 
 				<input type="email" name="email" placeholder="Электронная почта">
 				<a class="btn" href="#">Отправить</a>
-			</section>
-			<div class="feedback">
+			</article>
+			<article class="feedback">
 				<img src="" title="Карта">
 				Адрес главного офиса и офлайн магазина:  ул. Большая Конюшенная 19/8, Санкт-Петербург
 				Для заказов по телефону:
 				8 812 450-25-25 (с 10 до 20 ежедневно)
 				<a class="btn" href="">Форма обратной связи</a>
-					<!-- Модальное окно -->
-			</div>
+			</article>
 		</main>
 		<footer class="page-footer">
 			<div>
@@ -110,8 +109,8 @@
 			Экологические стандарты
 			
 		  	<div class="logo">
-		  		<a href="">
-		  			<img src="" title="Логотип" width="155" height="65">
+				<a class="main-header-logo">
+		  			<img src="img/index-logo.svg" width="155" height="65" alt="Логотип магазина мороженого Глейси">
 		  		</a>
 		  	</div>
 			Создано в <a href="">HTML Academy</a> @ 2017
