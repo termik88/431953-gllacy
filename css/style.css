@@ -1,0 +1,49 @@
+/*Сетка для сайта*/
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-width: 900px;
+	max-width: 1200px;
+	padding: 0 27px 0 27px;
+	background-color: rgb(135, 157, 143);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.grid-row {
+	display: flex;
+	flex-direction: row;
+	border: 2px solid black;	
+}
+
+.grid-column {
+	flex: 1;
+	border: 2px solid red;
+}
+
+.grid-map {
+	display: flex;
+	flex-direction: column;
+	margin: 0 -27px;
+	border: 2px solid red;	
+}
+
+.grid-feedback {
+	align-self: flex-end;
+	margin: 60px 27px 60px;
+	border: 2px solid red;
+}
+
+.work-info {
+	align-content: flex-end;
+}
