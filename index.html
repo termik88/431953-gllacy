@@ -8,67 +8,101 @@
 		<meta name="description" content="">
 	</head>
 	<body>
-  		<header class="grid-column main-header">
-		  	<nav class="grid-row main-menu">
+  		<header class="main-header">
+		  	<nav class="grid-row main-navigation">
 		  		<a class="main-header-logo">
-		  			<img class="grid-column" src="img/index-logo.svg" width="155" height="65" alt="Логотип магазина мороженого Глейси">
+		  			<img class="grid-item" src="img/index-logo.png" width="155" height="65" alt="Логотип магазина мороженого Глейси">
 		  		</a>
-			  	<div class="main-navigation-wrapper">
+			  	<div class="grid-item main-navigation-wrapper">
 			  		<div class="grid-row container">
 					  	<ul class="grid-row site-navigation">
-						  	<li class="grid-column"><a class="" href="#">Каталог</a></li>
-							<li class="grid-column"><a class="" href="#">Доставка и оплата</a></li>
-							<li class="grid-column"><a class="" href="#">О компании</a></li>
+						  	<li class="grid-item">
+						  		<a class="" href="#">Каталог</a>
+						  		<ul class="sub-menu">
+						  			<li>Новинки</li>
+						  			<li><a href="catalog.html">Сливочное</a></li>
+						  			<li><a href="#">Щербеты</a></li>
+						  			<li><a href="#">Фруктовый лед</a></li>
+						  			<li><a href="#">Мелорин</a></li>
+						  		</ul>
+						  	</li>
+							<li class="grid-item"><a class="" href="shipping and payment.html">Доставка и оплата</a></li>
+							<li class="grid-item"><a class="" href="company.html">О компании</a></li>
 						</ul>
 						<ul class="grid-row user-navigation">
-							<li class="grid-column"><a class="btn" href="#">Поиск</a></li>
-							<li class="grid-column"><a class="btn" href="#">Вход</a></li>
-							<li class="grid-column"><a class="btn" href="#">Пусто</a></li>
+							<li class="grid-item">
+								<a class="button button-user-navigation search" href="#">Поиск</a>
+								<form class="search-form">
+									<input type="search" name="search" placeholder="Что ищем?">
+								</form>
+							</li>
+							<li class="grid-item">
+								<a class="button button-user-navigation login-link" href="#">Вход</a>
+								<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+									<p>
+										<input type="email" name="email" placeholder="Элетронная почта">
+									</p>
+									<p>
+										<input type="password" name="password" placeholder="Пароль">
+									</p>
+									<p>
+										<button class="button" type="submit">Войти</button>
+										<a class="restore" href="#">Забыли пароль</a>
+										<a class="registration" href="#">Новая регистрация</a>
+									</p>
+								</form>
+							</li>
+							<li class="grid-item"><a class="button button-user-navigation basket" href="#">Пусто</a></li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-			<div class="grid-row work-info">
-				С 10 до 20, ежедневно 
-				<b>8 812 450 25 25</b>
+			<div class="grid-work-info work-info">
+				<p>С 10 до 20, ежедневно <b>8 812 450-25-25</b></p>
 			</div>    
 		</header>
-		<main>
+		<main class="main-container">
 			<section class="grid-row slider">
-				<h1>Крем-брюле и пломбир<br>с малиновым джемом</h1>
-				<a class="btn" href="#">Давайте оба!</a>			
+				<h1>Крем-брюле и пломбир с малиновым джемом</h1>
+				<a class="button button-slider" href="#">Давайте оба!</a>			
 			</section>
 			<section class="grid-row specially-offers">
 				<h2 class="visually-hidden">Специальные предложения</h2> <!--Скрытый заголовок-->
-				<article class="grid-column specially-offer">
+				<article class="grid-item specially-offer">
 					<h2>Малинка даром!</h2>
 					<p>При покупке 2 кг любого фрутового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="btn" href="">Хочу варение!</a>
+					<a class="button button-specially-offer" href="">Хочу варение!</a>
 				</article>
-				<article class="grid-column specially-offer">
+				<article class="grid-item specially-offer">
 					<h2>Шоколадки даром!</h2>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a class="btn" href="#">Хочу шоколадки!</a>
+					<a class="button button-specially-offer" href="#">Хочу шоколадки!</a>
 				</article>
 			</section>
-			<section class="grid-row best-products">
+			<section class="grid-row bestsellers-catalog">
 				<h2 class="visually-hidden">Хиты продаж</h2> <!--Скрытый заголовок-->
-				<article class="grid-column product">
-					<b>310 <span>р/кг</span></b>
-					Сливочное с апельсиновым джемом и цитрусовой стружкой
-				</article>
-				<article class="grid-column product">
-					<b>380 <span>р/кг</span></b>
-					Сливочное-кофейное с кусочками шоколада
-				</article>
-				<article class="grid-column product">
-					<b>355 <span>р/кг</span></b>
-					Сливочное-клубничное с присыпкой из белого шоколада
-				</article>
-				<article class="grid-column product">
-					<b>415 <span>р/кг</span></b>
-					Сливочное крем-брюле с карамельной подливкой
-				</article>
+				<ul class="catalog-list">
+					<li class="grid-item catalog-item">
+						<img src="img/index/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+						<p><b>310 <span>р/кг</span></b></p>
+						<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+					</li>
+					<li class="grid-item catalog-item">
+						<img src="img/index/2.png" width="267" height="267" alt="Сливочное-кофейное с кусочками шоколада">
+						<p><b>380 <span>р/кг</span></b></p>
+						<p>Сливочное-кофейное с кусочками шоколада</p>
+					</li>
+					<li class="grid-item catalog-item">
+						<img src="img/index/3.png" width="267" height="267" alt="Сливочное-клубничное с присыпкой из белого шоколада">
+						<p><b>355 <span>р/кг</span></b></p>
+						<p>Сливочное-клубничное с присыпкой из белого шоколада</p>
+					</li>
+					<li class="grid-item catalog-item">
+						<img src="img/index/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+						<p><b>415 <span>р/кг</span></b></p>
+						<p>Сливочное крем-брюле с карамельной подливкой</p>
+					</li>
+				</ul>
 			</section>
 			<article class="grid-row about-us">
 				<h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
@@ -81,21 +115,21 @@
 			</article>
 			<section class="grid-row blog-and-subscription">
 				<h2 class="visually-hidden">Блог и рассылка для вас</h2> <!--Скрытый заголовок-->
-				<article class="grid-column blog">
+				<article class="grid-item blog">
 					<h4>Новое в нашем блоге</h4>
 					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 				</article>
-				<article class="grid-column subscription">
+				<article class="grid-item subscription">
 					<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2> <!--Скрытый заголовок-->
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p> 
 					<input type="email" name="email" placeholder="Электронная почта">
-					<a class="btn" href="#">Отправить</a>
+					<a class="button button-subscription" href="#">Отправить</a>
 				</article>
 			</section>
-			<article class="grid-map map-feedback">
+			<article class="grid-map-feedback map-feedback">
 				<h2 class="visually-hidden">Где мы находимся и обратная связь с нами</h2> <!--Скрытый заголовок-->
 				<div class="grid-feedback">
-					<img src="" alt="Карта подъезда к нам">
+					<img src="img/index/map.png" alt="Карта подъезда к нам">
 					<p>Адрес главного офиса 
 					и офлайн магазина:  
 					<b>ул. Большая Конюшенная 
@@ -103,40 +137,91 @@
 					<p>Для заказов по телефону:
 					<b>8 812 450-25-25</b> 
 					(с 10 до 20 ежедневно)</p>
-					<a class="btn feedback" href="">Форма обратной связи</a>
+					<a class="button button-feedback" href="">Форма обратной связи</a>
 				</div>
 			</article>
 		</main>
 		<footer class="grid-row footer">
-			<div class="grid-column social">
-				<ul>
-					<li><a href="">Птичка</a></li>
-					<li><a href="">Камера</a></li>
-					<li><a href="">Фейсбук</a></li>
-					<li><a href="">Контакт</a></li>
+			<div class="grid-item social">
+				<ul class="grid-row fuu">
+					<li class="grid-item"><a class="social-button" href="">Птичка</a></li>
+					<li class="grid-item"><a class="social-button" href="">Камера</a></li>
+					<li class="grid-item"><a class="social-button" href="">Фейсбук</a></li>
+					<li class="grid-item"><a class="social-button" href="">Контакт</a></li>
 				</ul>
 			</div>
-			<div class="grid-column footer-menu">
+			<div class="grid-item footer-menu">
 				<ul class="grid-row">
-					<li class="grid-column"><a href=""><span class="heart">Сердечко</span>Для поставщиков</a></li>
-					<li class="grid-column"><a href="">Наши документы</a></li>
+					<li class="grid-item"><a href=""><span class="heart">Сердечко</span>Для поставщиков</a></li>
+					<li class="grid-item"><a href="">Наши документы</a></li>
+					<li class="grid-item"><a href="">О производстве</a></li>
+					<li class="grid-item"><a href="">Экологические стандарты</a></li>
 				</ul>
-				<ul class="grid-row">
-					<li class="grid-column"><a href="">О производстве</a></li>
-					<li class="grid-column"><a href="">Экологические стандарты</a></li>
-				</ul>>
 			</div>
-		  	<div class="grid-column logo">
-				<a class="main-footer-logo">
-		  			<img src="img/index-logo.svg" width="155" height="65" alt="Логотип магазина мороженого Глейси">
+		  	<div class="grid-item footer-copyright">
+				<a class="footer-logo" href="https://up.htmlacademy.ru/htmlcss/18">
+		  			<img src="img/index-logo.png" width="155" height="65" alt="Логотип магазина мороженого Глейси">
 		  		</a>
-		  		<p>Создано в <a href="">HTML Academy</a> @ 2017</p>
+		  		<p>Создано в <a href="https://up.htmlacademy.ru/htmlcss/18">HTML Academy</a> @ 2017</p>
 		  	</div>
 		</footer>
+		<!--
+		<section class="sub-menu sub-menu-catalog">
+			<h2 class="visually-hidden">Меню: Католог</h2>
+			<a class="" href="#">Каталог</a>
+			<ul class="sub-menu">
+				<li>Новинки</li>
+				<li><a href="#">Сливочное</a></li>
+				<li><a href="catalog.html">Щербеты</li>
+				<li><a href="#">Фруктовый лед</li>
+				<li><a href="#">Мелорин</li>
+			</ul>
+			
+		</section>
+		<section class="sub-menu sub-menu-search">
+			<h2 class="visually-hidden">Поиск</h2>
+			<form class="search-form">
+				<input type="text" name="search" placeholder="Что ищем?">
+			</form>	
+		</section>
+		<section class="sub-menu sub-menu-login">
+			<h2 class="visually-hidden">Личный кабинет</h2> 
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<input type="email" name="email" placeholder="Элетронная почта">
+				</p>
+				<p>
+					<input type="password" name="password" placeholder="Пароль">
+				</p>
+				<p>
+					<button class="button" type="submit">Войти</button>
+					<a class="restore" href="#">Забыли пароль</a>
+					<a class="registration" href="#">Новая регистрация</a>
+				</p>
+			</form>		
+		</section>
+		-->
+		<section class="modal modal-feedback">
+			<h2>Мы обязательно вам ответим!</h2>
+			<span class="modal-close">x</span>
+			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<input type="text" name="name" placeholder="Как вас зовут?">
+				</p>
+				<p>
+					<input type="email" name=""email placeholder="Ваша почта для ответа?">
+				</p>
+				<p>
+					<textarea name="comment" placeholder="Напишите что-нибудь... "></textarea>
+				</p>
+				<button class="button" type="submit">Отправить</button>
+			</form>
+		</section>
 	</body>
 </html>
 
 
 <!--Вопросы
-	1) Карта это img или ее делать фоном через CSS ?
+	1) Как лучше делать разметку списка из двух колонок ? Двумя списками(колонка=список) или одним списком и CSS свой свойством flex-wrap: wrap?
+	2) не отображатся картинки в SVG ?
 -->
