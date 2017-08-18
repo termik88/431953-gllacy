@@ -9,41 +9,43 @@
     <meta name="description" content="Очень вкусное мороженое на любой вкус от магазина Глейси">
   </head>
   <body>
-
     <header class="main-header">
-
-      <div class="header-logo">
-        <a href="index.html">
-          <img src="img/header-logo.png" width="154" height="64" alt="GllasyShop">
-        </a>
-      </div>
-      <div class="navigation-wrapper">
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li>
-              <a class="" href="#">Каталог</a>
-              <ul class="sub-menu">
-                <li><a href="#">Новинки</a></li>
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li><a href="shipping_and_payment.html">Доставка и оплата</a></li>
-            <li><a href="company.html">О компании</a></li>
-          </ul>
+      <div class="header-top">
+        <div class="header-left">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="img/header-logo.png" width="154" height="64" alt="Gllacy">
+            </a>
+          </div>
+          <nav class="site-navigation">
+            <ul>
+              <li>
+                <a class="" href="#">Каталог</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </li>
+              <li><a href="shipping_and_payment.html">Доставка и оплата</a></li>
+              <li><a href="company.html">О компании</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
           <div class="user-navigation"> <!-- Форма поиска
             <div class="btn search">
-              <p>Поиск</p>
-              <form action="echo.htmlacademy.ru" method="post">
+              <a href="#" class="icon-find" title="Поиск">Поиск</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="search" name="search" id="search">
                 <label for="search" placeholder="Что ищем?"></label>
               </form>
             </div> -->
             <div class="btn entrance">
-              <p>Вход</p>
-              <form action="echo.htmlacademy.ru" method="post">
+              <a href="#" class="icon-log-in">Вход</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="header-email" placeholder="Электронная почта" required>
                 <input type="password" name="password" placeholder="Пароль" required>
                 <div class="button">
@@ -56,23 +58,23 @@
               </form>
             </div>
             <div class="btn basket">
-              <p>2  товара</p>
+              <a href="#" class="icon-basket">2 товара</a>
               <table>
                 <tr>
                   <td><span class="basket-close">x</span></td>
                   <td class="picture"><img src="img/catalog/basked/Мороженко 1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                  <td class="name">Пломбир с апельсиновым джемом</td>
-                  <td class="weight"><b>1,5 кг x</b></td>
-                  <td class="price">200 руб.</td>
-                  <td class="total">300 руб</td>
+                  <td class="basket-name">Пломбир с апельсиновым джемом</td>
+                  <td class="basket-weight"><b>1,5 кг x</b></td>
+                  <td class="basket-price">200 руб.</td>
+                  <td class="basket-total">300 руб</td>
                 </tr>
                 <tr>
                   <td><span class="basket-close">x</span></td>
                   <td class="picture"><img src="img/catalog/basked/Мороженко 2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                  <td class="name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="weight"><b>1,5 кг x</b></td>
-                  <td class="price">300 руб.</td>
-                  <td class="total">450 руб</td>
+                  <td class="basket-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="basket-weight"><b>1,5 кг x</b></td>
+                  <td class="basket-price">300 руб.</td>
+                  <td class="basket-total">450 руб</td>
                 </tr>             
               </table>
               <p>Итого: 750 руб.</p>
@@ -81,24 +83,24 @@
               </div>
             </div>
           </div>
-        </nav>
+        </div>
+      </div>
+      <div class="header-bottom">
         <div class="work-phone">
           <p>С 10 до 20, ежедневно <b>8 812 450-25-25</b></p>
         </div>
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li class="breadcrumbs-current">Сливочное</li>
+          </ul>
+        </div>
+        <h1>Сливочное мороженое</h1>
       </div>
-
     </header>
 
 		<main class="main-container">
-
-			<div class="breadcrumbs">
-				<ul>
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="#">Каталог</a></li>
-					<li class="breadcrumbs-current">Сливочное</li>
-				</ul>
-			</div>
-			<h1>Сливочное мороженное</h1>
 
 			<section class="filters">
 			  <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -107,7 +109,7 @@
 		    	<select name="sorting" id="sorting">
 		    		<option value="1">по популярности</option>
 		    		<option value="2">сначала недорогие</option>
-		    		<option value="">сначала дорогие</option>
+		    		<option value="3">сначала дорогие</option>
 		    		<option value="4">по жирности</option>
 			    </select>
 
@@ -117,16 +119,16 @@
         		<legend>Жирность:</legend>
         			<ul>
      						<li class="filter-option">
-     							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness-group" value="0">%  
+     							<input class="filter-input filter-input-radio" type="radio" name="richness-group" value="0">%  
      						</li>
         				<li class="filter-option">
-        					<input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness-group" value="to-10" checked>до 10%
+        					<input class="filter-input filter-input-radio" type="radio" name="richness-group" value="to-10" checked>до 10%
         				</li>
         				<li class="filter-option">
-        					<input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness-group" value="to-30">до 30%
+        					<input class="filter-input filter-input-radio" type="radio" name="richness-group" value="to-30">до 30%
         				</li>
         				<li class="filter-option">
-        					<input class="visually-hidden filter-input filter-input-radio" type="radio" name="richness-group" value="30">выше 30%
+        					<input class="filter-input filter-input-radio" type="radio" name="richness-group" value="30">выше 30%
         				</li>
         			</ul>          
           	</fieldset>
@@ -253,12 +255,13 @@
           	</div>
     		</div>
 		    <ul class="pagination-list">
+          <li class="pagination-item"><a href="#"><span class="arrow-left"><</span></a></li>
 		      <li class="pagination-item"><a href="#">1</a></li>
 		      <li class="pagination-item pagination-item-current"><a>2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
 					<li class="pagination-item"><a href="#">4</a></li>
 		      <li class="pagination-item"><a href="#">5</a></li>
-		      <li class="pagination-item"><a href="#"><span>></span></a></li>
+		      <li class="pagination-item"><a href="#"><span class="arrow-right">></span></a></li>
 		    </ul>
       </section>
 
@@ -267,28 +270,28 @@
 		<footer class="main-footer">
 
       <div class="container">
-   			<section class="footer-social">
+   			<div class="footer-social">
    				<ul>
    					<li><a class="social-btn social-btn-tw" href="">Твиттер</a></li>
-   					<li><a class="social-btn social-btn-inst" href="">Инстаграмм</a></li>
+   					<li><a class="social-btn social-btn-inst" href="">Инстаграм</a></li>
    					<li><a class="social-btn social-btn-fb" href="">Фейсбук</a></li>
    					<li><a class="social-btn social-btn-vk" href="">Контакт</a></li>
    				</ul>
-   			</section>
-   			<section class="footer-menu">
+   			</div>
+   			<div class="footer-menu">
    				<ul>
    					<li><a href=""><span class="heart">Сердечко</span>Для поставщиков</a></li>
    					<li><a href="">Наши документы</a></li>
    					<li><a href="">О производстве</a></li>
    					<li><a href="">Экологические стандарты</a></li>
    				</ul>
-   			</section>
-   		  <section class="footer-copyright">
+   			</div>
+   		  <div class="footer-copyright">
    				<a class="footer-logo" href="up.htmlacademy.ru/htmlcss/18">
    		  		<img src="img/footer-logo.png" width="108" height="39" alt="GllasyShop">
    		  	</a>
    		  	<p>Создано в <a href="up.htmlacademy.ru/htmlcss/18">HTML Academy</a> @ 2017</p>
-   		  </section>
+   		  </div>
       </div>
  		</footer>
 
