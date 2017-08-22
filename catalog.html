@@ -35,16 +35,18 @@
           </nav>
         </div>
         <div class="header-right">
-          <div class="user-navigation"> <!-- Форма поиска
+          <div class="user-navigation">
             <div class="btn search">
-              <a href="#" class="icon-find" title="Поиск">Поиск</a>
+              <a href="#" class="icon-find">Поиск</a>
+              <h2 class="visually-hidden">Форма поиска</h2>
               <form action="/echo" method="post">
                 <input type="search" name="search" id="search">
                 <label for="search" placeholder="Что ищем?"></label>
               </form>
-            </div> -->
+            </div>
             <div class="btn entrance">
               <a href="#" class="icon-log-in">Вход</a>
+              <h2 class="visually-hidden">Форма входа</h2>
               <form action="/echo" method="post">
                 <input type="email" name="header-email" placeholder="Электронная почта" required>
                 <input type="password" name="password" placeholder="Пароль" required>
@@ -59,6 +61,7 @@
             </div>
             <div class="btn basket">
               <a href="#" class="icon-basket">2 товара</a>
+              <h2 class="visually-hidden">Форма корзины</h2>
               <table>
                 <tr>
                   <td><button class="basket-delete" type="button">Удалить</button></td>
@@ -255,9 +258,9 @@
           	</div>
     		</div>
 		    <ul class="pagination-list">
-          <li class="pagination-item"><a href="#"><span class="arrow-left"><</span></a></li>
-		      <li class="pagination-item"><a href="#">1</a></li>
-		      <li class="pagination-item pagination-item-current"><a>2</a></li>
+          <li class="pagination-item"><a><span class="arrow-left"><</span></a></li>
+		      <li class="pagination-item pagination-item-current"><a>1</a></li>
+		      <li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
 					<li class="pagination-item"><a href="#">4</a></li>
 		      <li class="pagination-item"><a href="#">5</a></li>
@@ -271,6 +274,7 @@
 
       <div class="container">
    			<div class="footer-social">
+          <h3 class="visually-hidden">Магазин Глейси в социальных сетях</h3>
    				<ul>
    					<li><a class="social-btn social-btn-tw" href="">Твиттер</a></li>
    					<li><a class="social-btn social-btn-inst" href="">Инстаграм</a></li>
@@ -278,7 +282,8 @@
    					<li><a class="social-btn social-btn-vk" href="">Контакт</a></li>
    				</ul>
    			</div>
-   			<div class="footer-menu">
+   			<div class="footer-info">
+          <h3 class="visually-hidden">Информация</h3>
    				<ul>
    					<li><a href=""><span class="heart">Сердечко</span>Для поставщиков</a></li>
    					<li><a href="">Наши документы</a></li>
