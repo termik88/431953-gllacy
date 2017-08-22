@@ -38,6 +38,7 @@
           <div class="user-navigation"> <!-- Форма поиска
             <div class="btn search">
               <a href="#" class="icon-find" title="Поиск">Поиск</a>
+              <h2 class="visually-hidden">Форма поиска</h2>
               <form action="/echo" method="post">
                 <input type="search" name="search" id="search">
                 <label for="search" placeholder="Что ищем?"></label>
@@ -45,6 +46,7 @@
             </div> -->
             <div class="btn entrance">
               <a href="#" class="icon-log-in">Вход</a>
+              <h2 class="visually-hidden">Форма входа</h2>
               <form action="/echo" method="post">
                 <input type="email" name="header-email" placeholder="Электронная почта" required>
                 <input type="password" name="password" placeholder="Пароль" required>
@@ -59,6 +61,7 @@
             </div>
             <div class="btn basket">
               <a href="#" class="icon-basket">Пусто</a>
+              <h2 class="visually-hidden">Корзина</h2>
             </div>
           </div>
         </div>
@@ -244,8 +247,9 @@
  		</footer>
 
     <div class="modal modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="/echo" method="post">
-       <h2>Мы обязательно вам ответим!</h2>
+       <h3>Мы обязательно вам ответим!</h3>
        <p>
         <input type="text" name="name" required id="name" placeholder="Как вас зовут?">
         <label for="text" placeholder="Как вас зовут?"></label>
@@ -259,8 +263,8 @@
        </p>
       <label for="comment" placeholder="Напишите что-нибудь..."></label>
       <input class="btn btn-send" type="submit" value="Отправить">
-      <buttom class="modal-close" type="bottom"></bottom>
       </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </div>
   
  	</body>
