@@ -14,38 +14,52 @@
   <div class="slider-container"> <!--Проба-->
 
     <header class="main-header">
-      <nav class="container header-top main-navigation">
+      <nav class="header-top main-navigation">
         <a>
           <img src="img/header-logo.svg" width="154" height="64" alt="Gllacy">
         </a>
-        <ul class="site-navigation">
-          <li>
-            <a class="" href="#">Каталог</a>
-            <ul class="sub-menu">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item navigation-catalog">
+            <a class="site-navigation__link" href="#">Каталог</a>
+            <ul class="navigation-catalog__sub-menu">
+              <li class="navigation-catalog__item">
+                <a class="navigation-catalog__link new-products" href="#">Новинки</a>
+              </li>
+              <li class="navigation-catalog__item">
+                <a class="navigation-catalog__link" href="catalog.html">Сливочное</a>
+              </li>
+              <li class="navigation-catalog__item">
+                <a class="navigation-catalog__link" href="#">Щербеты</a>
+              </li>
+              <li class="navigation-catalog__item">
+                <a class="navigation-catalog__link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="navigation-catalog__item">
+                <a class="navigation-catalog__link" href="#">Мелорин</a>
+              </li>
             </ul>
           </li>
-          <li><a href="shipping_and_payment.html">Доставка и оплата</a></li>
-          <li><a href="company.html">О компании</a></li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="shipping_and_payment.html">Доставка и оплата</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="company.html">О компании</a>
+          </li>
         </ul>
         <div class="user-navigation">
           <div class="search">
-            <a href="#" class="btn btn-user icon-find">Поиск</a>
+            <a href="#" class="button button-user icon-find">Поиск</a>
             <section>
               <h2 class="visually-hidden">Форма поиска</h2>
               <form action="/echo" method="post">
                 <input type="search" name="search" id="search" placeholder="Что ищем?">
                 <label for="search" placeholder="Что ищем?"></label>
-                <input type="submit" name="btn-search">
+                <input type="submit" name="button-search">
               </form>
             </section>
           </div>
           <div class="entrance">
-            <a href="#" class="btn btn-user icon-log-in">Вход</a>
+            <a href="#" class="button button-user icon-log-in">Вход</a>
             <section>
               <h2 class="visually-hidden">Форма входа</h2>
               <form action="/echo" method="post">
@@ -53,8 +67,8 @@
                 <label for="header-email" placeholder="Электронная почта"></label>
                 <input type="password" name="password" id="password" placeholder="Пароль" required>
                 <label for="password" placeholder="Пароль"></label>
-                <div class="btn-enter">
-                  <input class="btn btn-site" type="submit" name="enter" value="Войти">
+                <div class="button-enter">
+                  <input class="button button-site" type="submit" name="enter" value="Войти">
                 </div>
                 <div class="log-in">
                   <a class="password" href="#">Забыли пароль?</a>
@@ -64,23 +78,22 @@
             </section>
           </div>
           <div class="basket">
-            <a href="#" class="btn btn-user icon-basket">Пусто</a>
+            <a href="#" class="button button-user icon-basket">Пусто</a>
             <section>
               <h2 class="visually-hidden">Форма корзины</h2>
-              <!--...-->
             </section>
           </div>
         </div>
       </nav>
       <div class="container header-bottom">
         <div class="slider-control">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
+          <input type="radio" id="button-1" name="toggle" checked>
+          <input type="radio" id="button-2" name="toggle">
+          <input type="radio" id="button-3" name="toggle">
           <div class="slider-desc">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <label for="button-1"></label>
+            <label for="button-2"></label>
+            <label for="button-3"></label>
           </div>
         </div>
         <div class="slider-top">
@@ -88,8 +101,8 @@
             <img src="#" width="#" height="#" alt="Крем-брюле и пломбир">
             <div class="slider-tagline">
               <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-              <div class="btn-slider">
-                <a class="btn btn-site order" href="#">Давайте оба!</a>
+              <div class="button-slider">
+                <a class="button button-site order" href="#">Давайте оба!</a>
               </div>
             </div>
           </div>
@@ -97,8 +110,8 @@
             <img src="#" width="#" height="#" alt="Шоколадный пломбир">
             <div class="slider-tagline">
               <h2>Шоколадный пломбир и лимонный щербет</h2>
-              <div class="btn-slider">
-                <a class="btn btn-site order" href="#">Давайте оба!</a>
+              <div class="button-slider">
+                <a class="button button-site order" href="#">Давайте оба!</a>
               </div>
             </div>
           </div>
@@ -106,8 +119,8 @@
             <img src="#" width="#" height="#" alt="Пломбир с помадкой">
             <div class="slider-tagline">
               <h2>Пломбир с помадкой и клубничный щербет</h2>
-              <div class="btn-slider">
-                <a class="btn btn-site order" href="#">Давайте оба!</a>
+              <div class="button-slider">
+                <a class="button button-site order" href="#">Давайте оба!</a>
               </div>
             </div>
           </div>
@@ -127,12 +140,12 @@
  				<article class="special-offer">
  					<h3>Малинка даром!</h3>
  					<p>При покупке 2 кг любого фрутового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
- 					<a class="btn btn-site btn-special-offer" href="#">Хочу варение!</a> 
+ 					<a class="button button-site button-special-offer" href="#">Хочу варение!</a> 
  				</article>
  				<article class="special-offer">
  					<h3>Шоколадки даром!</h3>
  					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
- 					<a class="btn btn-site btn-special-offer" href="#">Хочу шоколадки!</a> 
+ 					<a class="button button-site button-special-offer" href="#">Хочу шоколадки!</a> 
  				</article>
  			</section>
 
@@ -145,8 +158,8 @@
           </div>
           <div class="price">310&#8381;<span class="weight-item">/кг</span></div>
           <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-          <div class="btn-product">
-            <a class="btn btn-site product-view" href="#">Быстрый просмотр</a>
+          <div class="button-product">
+            <a class="button button-site product-view" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="catalog-item">
@@ -156,8 +169,8 @@
           </div>
           <div class="price">380&#8381;<span class="weight-item">/кг</span></div>
           <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-          <div class="btn-product">
-            <a class="btn btn-site product-view" href="#">Быстрый просмотр</a>
+          <div class="button-product">
+            <a class="button button-site product-view" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="catalog-item">
@@ -167,8 +180,8 @@
           </div>
           <div class="price">355&#8381;<span class="weight-item">/кг</span></div>
           <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-          <div class="btn-product">
-            <a class="btn btn-site product-view" href="#">Быстрый просмотр</a>
+          <div class="button-product">
+            <a class="button button-site product-view" href="#">Быстрый просмотр</a>
           </div>
         </div>
         <div class="catalog-item">
@@ -178,8 +191,8 @@
           </div>
           <div class="price">415&#8381;<span class="weight-item">/кг</span></div>
           <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-          <div class="btn-product">
-            <a class="btn btn-site product-view" href="#">Быстрый просмотр</a>
+          <div class="button-product">
+            <a class="button button-site product-view" href="#">Быстрый просмотр</a>
           </div>
         </div>
  			</section>
@@ -210,7 +223,7 @@
   					<form action="/echo" method="post">
   						<input type="email" name="sub-email" id="sub-email" placeholder="Электронная почта">
               <label for="sub-email" placeholder="Электронная почта"></label>
-  						<input class="btn btn-site" type="submit" name="submit" value="Отправить">
+  						<input class="button button-site" type="submit" name="submit" value="Отправить">
   					</form>
   				</div>
  				</article>
@@ -218,20 +231,20 @@
 
       <section class="map-feedback">
         <h2 class="visually-hidden">Где мы находимся и обратная связь с нами</h2>
-        <div class="marker">Ice</div> 
-        <img src="img/map.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <div class="feedback">				
- 					<p>Адрес главного офиса
- 					и офлайн магазина:
- 					<b>ул. Большая Конюшенная
- 					19/8, Санкт-Петербург</b></p>
- 					<p>Для заказов по телефону:
- 					<b>8 812 450-25-25</b>
- 					(с 10 до 20 ежедневно)</p>
- 					<div class="btn-feedback">
-            <a class="btn btn-site feedback" href="#">Форма обратной связи</a>
+        <div class="map">
+          <div class="feedback">        
+            <p>Адрес главного офиса
+            и офлайн магазина:
+            <b>ул. Большая Конюшенная
+            19/8, Санкт-Петербург</b></p>
+            <p>Для заказов по телефону:
+            <b>8 812 450-25-25</b>
+            (с 10 до 20 ежедневно)</p>
+            <div class="button-feedback">
+              <a class="button button-site feedback" href="#">Форма обратной связи</a>
+            </div>
           </div>
- 			  </div>
+        </div>
       </section>
 
  		</main>
@@ -242,10 +255,10 @@
    			<div class="footer-social">
           <h3 class="visually-hidden">Магазин Глейси в социальных сетях</h3>
    				<ul>
-   					<li><a class="btn social-btn social-btn-tw" href="#">Твиттер</a></li>
-   					<li><a class="btn social-btn social-btn-inst" href="#">Инстаграм</a></li>
-   					<li><a class="btn social-btn social-btn-fb" href="#">Фейсбук</a></li>
-   					<li><a class="btn social-btn social-btn-vk" href="#">Контакт</a></li>
+   					<li><a class="button social-button social-button-tw" href="#">Твиттер</a></li>
+   					<li><a class="button social-button social-button-inst" href="#">Инстаграм</a></li>
+   					<li><a class="button social-button social-button-fb" href="#">Фейсбук</a></li>
+   					<li><a class="button social-button social-button-vk" href="#">Контакт</a></li>
    				</ul>
    			</div>
    			<div class="footer-info">
@@ -282,7 +295,7 @@
         <textarea name="comment" id="comment" placeholder="Напишите что-нибудь..."></textarea>
         <label for="comment" placeholder="Напишите что-нибудь..."></label>
        </p>
-      <input class="btn btn-site btn-send" type="submit" value="Отправить">
+      <input class="button button-site button-send" type="submit" value="Отправить">
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </div>
