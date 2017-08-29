@@ -1,28 +1,83 @@
 body {
+	max-width: 1200px;
+	min-width: 900px;
+	margin: 0 auto;
+	padding: 0;
+
+
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
+	font-weight: 500;
 	line-height: 22px;
 	color: #ffffff;
-	font-weight: normal;
+
 	background-color: #849d8f;
 }
 
-ul {
+.slider-container {
+	background-image: url("../img/special-offer-1.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	color: inherit;
+}
+
+.btn {
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 12px;
+}
+
+.btn-site {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	background: linear-gradient(90deg, #e74a35, #f26843);
+	border: none;
+}
+
+.site-navigation,
+.sub-menu,
+.features-list,
+.footer-social ul,
+.footer-info ul
+{
 	list-style: none;
 }
 
-/*.visually-hidden {
-	display: none;
-}*/
-
 .site-navigation {
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 18px;
 }
 
-.user-navigation {
+.sub-menu {
 	font-size: 14px;
+	font-weight: 500;
 	line-height: 16px;
+}
+
+.sub-menu li:first-child{
+	font-weight: 700;
+}
+
+.btn-user {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	background: rgb(157,177,165);
 }	
 
 .slider-slide h2{
@@ -33,23 +88,185 @@ ul {
 
 .work-phone p {
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 16px;
 }
 
 .work-phone b {
 	font-size: 22px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 24px;
 }
 
-.special-offer h3 {
+.special-offer:first-of-type {
+	background-image: url("../img/bg-raspberry.jpg");
+	background-repeat: no-repeat;
+}
+
+.special-offer:last-of-type {
+	background-image: url("../img/bg-chocolate.jpg");
+	background-repeat: no-repeat;
+}
+
+.special-offers h3 {
 	font-size: 35px;
-	font-weight: bold;
+	font-weight: 700;
+	line-height: 41px;
+}
+
+.special-offers p {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.catalog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.catalog-item {
+	position: relative;
+	flex-basis: 22.2%;
+}
+
+.box-img {
+	position: absolute;
+	z-index: -1;
+}
+
+.catalog-item img {
+	width: 100%;
+	height: 100%;
+}
+
+.catalog .price {
+	margin-top: 78.4%;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 45px;
+}
+
+.catalog .weight-item {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 45px;
+}
+
+.catalog p {
+	font-weight: 400;
+	text-align: center;
+}
+
+.about-us {
+	color: #323232;
+
+	background-image: url("../img/bg-waffle.jpg");
+	background-repeat: no-repeat;
 }
 
 .about-us h3 {
 	font-size: 24px;
-	font-weight: bold;
+	font-weight: 400;
 	line-height: 30px;
 }
+
+.blog {
+	color: #323232;
+
+	background-image: url("../img/bg-strawberry.jpg");
+	background-repeat: no-repeat;
+}
+
+.blog b {
+	font-weight: 400;
+}
+
+.blog p {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.subscription {
+	color: #5a5a5a;
+
+	background-image: url("../img/bg-mail.jpg");
+	background-repeat: no-repeat;
+}
+
+/*.map-feedback img {
+	width: 104.5%;
+	margin: 0 -27px 0 -27px;
+}*/
+
+.feedback {
+	color: #323232;
+}
+
+.feedback p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.feedback p b {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.footer-info li{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.footer-info li:first-child {
+	font-weight: 700;
+}
+
+.footer-copyright p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+/* От каталога*/
+.pagination-list {
+	display: flex;
+	justify-content: space-between;
+
+	min-width: 190px;
+	margin-top: 80px;
+	margin-left: auto;
+
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 18px;
+
+	list-style: none;
+}
+
+.arrow-left {
+	background-image: url("../img/icon-right-small.svg");
+	background-position: 9px 7px;
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
+}
+
+.pagination-item {
+	display: table-cell;
+	width: 25px;
+	height: 25px;
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+.pagination-item-current {
+	color: #000000;
+	background-color: #ffffff;
+
+}
+
