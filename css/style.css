@@ -35,7 +35,7 @@ body {
 	line-height: 22px;
 	color: #ffffff;
 
-	background-color: #849d8f;
+	background-color: #93a99d;
 
 	outline: 2px solid orange;
 }
@@ -97,7 +97,6 @@ a {
 }
 
 /*Кнопки*/
-
 .button {
   display: inline-block;
   padding: 11px 22px;
@@ -138,14 +137,12 @@ a {
 /*Верх шапки*/
 /*Главная навигация*/
 /*Общее*/
-
 .site-navigation,
 .catalog-sub-menu {
 	list-style: none;
 }
 
 /*Навигация сайта*/
-
 .site-navigation {
 	font-weight: 700;
 	line-height: 18px;
@@ -171,7 +168,6 @@ a {
 }
 
 /*Под меню (Каталог)*/
-
 .catalog-sub-menu {
 	font-size: 14px;
 	font-weight: 500;
@@ -207,7 +203,6 @@ a {
 }
 
 /*Навигация пользователя*/
-
 .user-navigation {
 	font-size: 14px;
 	font-weight: 400;
@@ -236,7 +231,6 @@ a {
 }
 
 /*ПОП Поиск*/
-
 /*ПОП Авторизация*/
 .entrance .password,
 .entrance .sign-in {
@@ -251,6 +245,7 @@ a {
 .entrance .sign-in:active  {
 	color: #e84d37;
 }
+
 /*ПОП Карзина*/
 .basket table {
 	border-bottom: 1px solid #d1d0ce;
@@ -260,17 +255,21 @@ a {
 	color: #323232;
 }
 
+.total {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
 /*Низ шапки*/
 /*Слайдер*/
-
 .slider-slide h2{
 	font-size: 60px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 60.35px;
 }
 
 /*Инфо*/
-
 .work-phone p {
 	font-size: 14px;
 	font-weight: 700;
@@ -285,7 +284,6 @@ a {
 
 /*Контент сайта*/
 /*Секция - Специальные предложения*/
-
 .special-offer:first-of-type {
 	background-image: url("../img/bg-raspberry.jpg");
 	background-repeat: no-repeat;
@@ -309,14 +307,14 @@ a {
 }
 
 /*Секция - Каталог*/
-
 .catalog {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .catalog-item {
+	padding-top: 10px;/*перепроверить на проценты*/
 	position: relative;
 	flex-basis: 24.416666666%;
 	text-align: center;
@@ -324,8 +322,7 @@ a {
 
 .box-img,
 .price,
-.catalog-item p,
-.button-product {
+.catalog-item p {
 	margin-left:  4.6075085%;
 	margin-right: 4.6075085%;
 }
@@ -367,22 +364,44 @@ a {
 }
 
 .catalog p {
+	height: 28,00456621004566%;
 	font-weight: 400;
 }
 
-.catalog .button {
+.button-product {
+	display: none;
+	position: absolute;
+	width: 100%;
+	padding-bottom: 5.432098765432099%;
+}
+	
+.product-view {
 	white-space: nowrap;
-	vertical-align: bottom;
+}	
+
+.catalog-item:hover {
+	background: rgba(132, 157, 143, 0.8);
+	z-index: 1;
 }
 
-.catalog-item:hover,
-.catalog-item:focus {
-	background-color: #9bafa3;
-	opacity: 0.988;
+.catalog-item:hover .button-product {
+	display: block;
+	background: rgba(132, 157, 143, 0.8);
+
+
 }
+
+/*
+.button-product:hover .product-item {
+
+}*/
+
+/* Эммммм, Почему не работает ?
+.catalog-item p a:focus .button-product {
+	display: block;
+}*/
 
 /*Секция - О нас*/
-
 .about-us {
 	color: #323232;
 
@@ -397,7 +416,6 @@ a {
 }
 
 /*Секция - Блог*/
-
 .blog {
 	color: #323232;
 
@@ -425,7 +443,6 @@ a {
 }
 
 /*Секция - Подписка*/
-
 .subscription {
 	padding: 6px;
 
@@ -440,7 +457,6 @@ a {
 }
 
 /*Секция Карта и Обратная связь*/
-
 .map-feedback {
 	display: flex;
 }
@@ -474,14 +490,12 @@ a {
 
 /*Футер*/
 /*Общее*/
-
-
 .footer-social ul,
 .footer-info ul {
 	list-style: none;
 }
-/*Социальные кнопки*/
 
+/*Социальные кнопки*/
 .social-button {
 	display: block;
 	width: 32px;
@@ -491,11 +505,13 @@ a {
 
 	border: 2px solid #c2cec7;
 	border-radius: 23px;
+	opacity: 0.80;
 }
 
 .social-button-tw {
 	background-image: url("../img/twitter.svg");
 	background-repeat: no-repeat;
+
 }
 
 .social-button-inst {
@@ -513,6 +529,15 @@ a {
 	background-repeat: no-repeat;
 }
 
+.social-button:hover,
+.social-button:focus {
+	opacity: 1;
+}
+
+.social-button:active{
+	opacity: 0.3;
+}
+
 
 /*Лист инфо*/
 .footer-info a{
@@ -527,6 +552,12 @@ a {
 	font-weight: 700;
 }
 
+.footer-info a:hover,
+.footer-info a:focus,
+.footer-info a:active  {
+	color: #ffbc9e;
+}
+
 /*Копирайт*/
 .footer-copyright p {
 	font-size: 12px;
@@ -539,19 +570,107 @@ a {
 	border-bottom: 1px solid #9db1a5;
 }
 
-/*Модальное окно Обратной связи*/
+.link-academy:hover,
+.link-academy:focus,
+.link-academy:active  {
+	color: #ffbc9e;
+}
 
+
+/*Модальное окно Обратной связи*/
+.modal-feedback {
+	background-color: #f8f7f4;
+}
+
+.modal-feedback h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #323232;
+}
 
 /*Страница Каталог*/
+/*Топ шапки*/
+.basked-current {
+	color: #323232;
+	background-color: #ffffff;
+}
 
+/*Низ шапки*/
+/*Хлебные крошки*/
+.breadcrumbs ul {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+
+	list-style: none;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus,
+.breadcrumbs-link:active  {
+	color: #ffbc9e;
+}
+
+.breadcrumbs-current {
+	color: #ffffff;
+}
+
+/*Фильтры*/
+.filters label,
+.filters legend {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+.filters ul{
+	list-style: none;
+}
+
+.sorting,
+.filters ul {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	background-color: #9db1a5;
+}
+
+.button-filter {
+	width: 143px;
+	height: 36px;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #ffffff;
+
+	background-color: #9cb0a4;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+	color: #323232;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+.button-filter:active {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	opacity: 0.8;
+}
 
 /*Пагинатор*/
 
 .pagination-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 
-	min-width: 190px;
+	min-width: 800px;
 	margin-top: 80px;
 	margin-left: auto;
 
@@ -569,18 +688,40 @@ a {
 	transform: rotate(180deg);
 }
 
+.arrow-right {
+	background-image: url("../img/icon-right-small.svg");
+	background-position: 9px 7px;
+	background-repeat: no-repeat;
+}
+
+.pagination-list li {
+	margin-right: 10px;
+}
+
 .pagination-item {
 	display: table-cell;
 	width: 25px;
 	height: 25px;
 
+	text-decoration: none;
+
 	text-align: center;
 	vertical-align: middle;
+	border-radius: 12px;
 }
 
 .pagination-item-current {
 	color: #000000;
 	background-color: #ffffff;
-
 }
 
+.pagination-item:hover,
+.pagination-item:focus {
+	color: #323232;
+	background-color: #9db1a5;
+}
+
+.pagination-item:active {
+	color: #000000;
+	background-color: #ffffff;
+}
