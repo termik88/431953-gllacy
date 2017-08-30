@@ -1,7 +1,7 @@
-# Личный проект «Глейси»
+﻿# Личный проект «Глейси»
 
 * Студент: [Илья Колосов](https://up.htmlacademy.ru/htmlcss/18/user/431953).
-* Наставник: [Евгения Миронова](https://htmlacademy.ru/profile/glandea)
+* Наставник: [Сергей Попов](https://htmlacademy.ru/profile/id42761)
 
 ---
 
