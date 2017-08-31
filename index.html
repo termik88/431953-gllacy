@@ -24,6 +24,7 @@
           <ul class="site-navigation">
             <li class="site-navigation-catalog">
               <a href="#">Каталог</a>
+              <!--
               <ul class="catalog-sub-menu">
                 <li><a class="new-products" href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
@@ -31,6 +32,7 @@
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
               </ul>
+              -->
             </li>
             <li><a href="shipping_and_payment.html">Доставка и оплата</a></li>
             <li><a href="company.html">О компании</a></li>
@@ -38,6 +40,7 @@
           <div class="user-navigation">
             <div class="search">
               <a href="#" class="user-navigation-button icon-find">Поиск</a>
+              <!--
               <section class="pop">
                 <h2 class="visually-hidden">Форма поиска</h2>
                 <form action="/echo" method="post">
@@ -45,9 +48,11 @@
                   <label for="search" placeholder="Что ищем?"></label>
                 </form>
               </section>
+              -->
             </div>
             <div class="entrance">
               <a href="#" class="user-navigation-button icon-log-in">Вход</a>
+              <!--
               <section class="pop">
                 <h2 class="visually-hidden">Форма входа</h2>
                 <form action="/echo" method="post">
@@ -66,12 +71,15 @@
                   </div>
                 </form>
               </section>
+              -->
             </div>
             <div class="basket">
               <a href="#" class="user-navigation-button icon-basket">Пусто</a>
+              <!--
               <section class="pop">
                 <h2 class="visually-hidden">Форма корзины</h2>
               </section>
+              -->
             </div>
           </div>
         </nav>
@@ -127,7 +135,7 @@
 
       <h1 class="visually-hidden">Магазин Глейси</h1>
 
- 			<section class="special-offers flex"> 
+ 			<section class="special-offers flex container"> 
  				<h2 class="visually-hidden">Специальные предложения</h2> 
  				<article class="special-offer">
  					<h3>Малинка даром!</h3>
@@ -189,37 +197,39 @@
         </div>
  			</section>
 
- 			<article class="about-us">
-        <h2 class="visually-hidden">О нас, о Глейси</h2>
- 				<h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-      	<ul class="features-list">
- 					<li class="feature-item"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
- 					<li class="feature-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
- 					<li class="feature-item"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
- 					<li class="feature-item"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
- 				</ul>
- 			</article>
+      <div class="container">
+   			<article class="about-us">
+          <h2 class="visually-hidden">О нас, о Глейси</h2>
+   				<h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+        	<ul class="features-list">
+   					<li class="feature-item"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
+   					<li class="feature-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
+   					<li class="feature-item"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
+   					<li class="feature-item"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+   				</ul>
+   			</article>
 
- 			<section class="blog-and-subscription flex">
- 				<h2 class="visually-hidden">Блог и рассылка для вас</h2>
- 				<article class="blog">
- 					<b>Новое в нашем блоге</b>
- 					<p class="blog-info">
-            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-          </p>
- 				</article>
- 				<article class="subscription">
- 					<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
-          <div class="subscription-email">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-  					<form action="/echo" method="post">
-  						<input type="email" name="sub-email" id="sub-email" placeholder="Электронная почта">
-              <label for="sub-email" placeholder="Электронная почта"></label>
-  						<input class="button button-site" type="submit" name="submit" value="Отправить">
-  					</form>
-  				</div>
- 				</article>
- 			</section>
+   			<section class="blog-and-subscription flex">
+   				<h2 class="visually-hidden">Блог и рассылка для вас</h2>
+   				<article class="blog">
+   					<b>Новое в нашем блоге</b>
+   					<p class="blog-info">
+              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </p>
+   				</article>
+   				<article class="subscription">
+   					<h2 class="visually-hidden">Подпишитесь на нашу рассылку</h2>
+            <div class="subscription-email">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+    					<form action="/echo" method="post">
+    						<input type="email" name="sub-email" id="sub-email" placeholder="Электронная почта">
+                <label for="sub-email" placeholder="Электронная почта"></label>
+    						<input class="button button-site" type="submit" name="submit" value="Отправить">
+    					</form>
+    				</div>
+   				</article>
+   			</section>
+      </div>
 
       <section class="map-feedback">
         <h2 class="visually-hidden">Где мы находимся и обратная связь с нами</h2>
@@ -233,7 +243,7 @@
             <b>8 812 450-25-25</b>
             (с 10 до 20 ежедневно)</p>
             <div class="button-feedback">
-              <a class="button button-site feedback" href="#">Форма обратной связи</a>
+              <a class="button button-site" href="#">Форма обратной связи</a>
             </div>
           </div>
         </div>
@@ -241,9 +251,7 @@
 
  		</main>
 
- 		<footer class="main-footer">
-
-      <div class="container">
+ 		<footer class="main-footer container">
    			<div class="footer-social">
           <h3 class="visually-hidden">Магазин Глейси в социальных сетях</h3>
    				<ul>

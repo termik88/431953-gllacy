@@ -37,25 +37,40 @@ body {
 
 	background-color: #93a99d;
 
-	outline: 2px solid orange;
+	outline: 2px solid red;
 }
 /*Флекс шапки и резины 900 до 1200*/
-/*.main-header {
+/*Общие*/
+.container {
+	min-width: 900px;
+	margin: 0 2.25%;
+	padding: 0;
+}
+/*Флексы*/
+/*Хедер*/
+.main-header { 
 	display: flex;
 	flex-direction: column;
+
 	outline: 2px solid orange;
+}
+
+.logo-navigation {
+	outline: 2px solid green;
 }
 
 .main-navigation {
 	display: flex;
 	align-items: center;
 
-	outline: 2px solid orange;
+	outline: 2px solid red;
 }
 
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
+
+	outline: 2px solid green;
 }
 
 .site-navigation li {
@@ -64,14 +79,119 @@ body {
 
 .user-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	margin-left: auto;
+
+	outline: 2px solid green;
 }
 
 .user-navigation div{
 	margin-left: 27px;
 }
 
-.slider-container {
+/*Контент*/
+/*Специальные предложения*/
+.special-offers {
+	display: flex;
+	justify-content: space-between;
+
+	outline: 2px solid blue;
+}
+
+.special-offer {
+	width: 48.86561954624781849912739965096%;
+	outline: 2px solid green;
+}
+
+.special-offer a {
+	position: button right;
+}
+
+/*Каталог - ФЛЕКС каталога описан ниже*/
+.catalog {
+	min-width: 880px;
+	margin: 0 1.0833333333333333333333333333333%;
+
+	outline: 2px solid blue;
+}
+
+
+/*О нас*/
+.about-us {
+
+	outline: 2px solid blue;
+}
+
+/*Блог и подписка*/
+.blog-and-subscription {
+	display: flex;
+	justify-content: space-between;
+
+	outline: 2px solid blue;
+}
+
+.blog {
+	width: 48.86561954624781849912739965096%;
+
+	outline: 2px solid green;
+}
+
+.subscription {
+	width: 48.86561954624781849912739965096%;
+
+	outline: 2px solid green;
+}
+
+/*Карта - ФЛЕКС описан ниже!!!!!*/
+.map-feedback {
+
+}
+
+/*ФУТЕР*/
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 95px;
+
+	outline: 2px solid blue;
+}
+
+/*.footer-social,
+.footer-info,
+.footer-copyright {
+	width: 390px;
+}*/
+
+/*Социальные кнопки*/
+.footer-social ul {
+	display: flex;
+	justify-content: space-between;
+
+	outline: 2px solid green;
+}
+
+/*Инфо*/
+.footer-info ul {
+	display: flex;
+
+	outline: 2px solid green;
+}
+
+/*Копирайт*/
+.footer-copyright ul {
+	display: flex;
+	align-items: flex-end;
+
+	outline: 2px solid green;
+}
+
+.footer-copyright p {
+	margin: 0;
+}
+
+/*.slider-container {
 	width: 95.5%;
 	margin: 0 auto;
 	background-image: url("../img/special-offer-1.png");
@@ -316,7 +436,7 @@ a {
 .catalog-item {
 	padding-top: 10px;/*перепроверить на проценты*/
 	position: relative;
-	flex-basis: 24.416666666%;
+	flex-basis: 25%;
 	text-align: center;
 }
 
@@ -349,7 +469,7 @@ a {
 }
 
 .catalog .price {
-	margin-top: 78.4%;
+	margin-top: 68.4%; /*78.4*/
 
 	font-size: 45px;
 	font-weight: 700;
@@ -462,17 +582,25 @@ a {
 }
 
 .map {
-	width: 104.5%;
+	width: 100%;
   	height: 430px;
 
-	margin: 0 -2.25%;
+	margin: 0 auto;
 
  	background-image: url("../img/map.png");
   	background-position: center center;
+
+  	outline: 2px solid blue;
 }
 
 .feedback {
+	width: 302px;
+	height: 305px;
+
+	margin: 62px 2.25% 62px auto;
+
 	background-color: #fefefe;
+	outline: 2px solid green;
 }
 
 .feedback p {
