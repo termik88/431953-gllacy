@@ -27,7 +27,7 @@ body {
 	min-width: 900px;
 
 	margin: 0 auto;
-	padding: 10px 0;
+	padding: 0;
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
@@ -39,13 +39,25 @@ body {
 
 	outline: 2px solid red;
 }
-/*Флекс шапки и резины 900 до 1200*/
+/*Сетка резины 900 до 1200, разметка страниц*/
 /*Общие*/
+.wrapper {
+	position: relative;
+
+}
+
 .container {
 	min-width: 900px;
 	margin: 0 2.25%;
 	padding: 0;
 }
+
+.slider-control {
+	top: 390px;
+	left: 30px;
+	position: absolute;
+}
+
 /*Флексы*/
 /*Хедер*/
 .main-header { 
@@ -87,6 +99,42 @@ body {
 
 .user-navigation div{
 	margin-left: 27px;
+}
+
+/*Низ Хедара*/
+.header-bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+/*Контакты*/
+.work-phone {
+	width: 168px;
+	margin-left: auto;
+
+	outline: 2px solid black;
+}
+
+/*!!!Страница Каталог Хлебные крошки!!!*/
+.breadcrumbs ul li{
+	display: inline-block;
+
+	outline: 2px solid black;
+}
+
+/*!!!Страница Каталог Хлебные крошки!!!*/
+.filters-form {
+	display: flex;
+
+	outline: 2px solid black;
+}
+
+
+/*Слайдер*/
+.slider-top {
+	text-align: center;
+
+	outline: 2px solid black;
 }
 
 /*Контент*/
@@ -158,16 +206,13 @@ body {
 	outline: 2px solid blue;
 }
 
-/*.footer-social,
-.footer-info,
-.footer-copyright {
-	width: 390px;
-}*/
-
 /*Социальные кнопки*/
 .footer-social ul {
 	display: flex;
 	justify-content: space-between;
+	width: 186px;
+
+	padding: 0; 
 
 	outline: 2px solid green;
 }
@@ -175,8 +220,29 @@ body {
 /*Инфо*/
 .footer-info ul {
 	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 326px;
+	height: 38px;
+
+	padding: 0;
 
 	outline: 2px solid green;
+}
+
+.footer-info li{
+	width: 40%;
+	white-space: nowrap;
+}
+
+.footer-info ul a {
+	padding-left: 20px;
+}
+
+.footer-info .heart {
+	background-image: url("../img/heart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 2px;
 }
 
 /*Копирайт*/
@@ -189,6 +255,10 @@ body {
 
 .footer-copyright p {
 	margin: 0;
+}
+
+.modal-feedback {
+	border: 2px solid yellow;
 }
 
 /*.slider-container {
@@ -400,6 +470,7 @@ a {
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 24px;
+	white-space: nowrap;
 }
 
 /*Контент сайта*/

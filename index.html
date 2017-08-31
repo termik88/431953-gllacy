@@ -11,7 +11,18 @@
   </head>
   <body>
 
-  <div class="slider-container"> <!--Проба-->
+  <div class="wrapper"> <!--Проба-->
+
+    <div class="slider-control">
+      <input type="radio" id="button-1" name="toggle" checked>
+      <input type="radio" id="button-2" name="toggle">
+      <input type="radio" id="button-3" name="toggle">
+      <div class="slider-desc">
+        <label for="button-1"></label>
+        <label for="button-2"></label>
+        <label for="button-3"></label>
+      </div>
+    </div>
 
     <header class="main-header container">
       <div class="header-top">
@@ -85,7 +96,14 @@
         </nav>
       </div>
       <div class="header-bottom">
+        <div class="work-phone">
+          <p>С 10 до 20, ежедневно <b>8 812 450-25-25</b></p>
+        </div>
       <!-- В процессе -->
+      <!--
+        
+      -->
+
         <div class="slider-top">
           <div class="slider-slide">
             <img src="#" width="#" height="#" alt="Крем-брюле и пломбир">
@@ -115,19 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="slider-control">
-          <input type="radio" id="button-1" name="toggle" checked>
-          <input type="radio" id="button-2" name="toggle">
-          <input type="radio" id="button-3" name="toggle">
-          <div class="slider-desc">
-            <label for="button-1"></label>
-            <label for="button-2"></label>
-            <label for="button-3"></label>
-          </div>
-        </div>
-        <div class="work-phone">
-          <p>С 10 до 20, ежедневно <b>8 812 450-25-25</b></p>
-        </div>
+        
       </div>
     </header>
 
@@ -280,7 +286,7 @@
    			<div class="footer-info">
           <h3 class="visually-hidden">Информация</h3>
    				<ul>
-   					<li><span class="heart">&#x2764;</span><a href="#">Для поставщиков</a></li>
+   					<li><a class="heart" href="#">Для поставщиков</a></li>
    					<li><a href="#">Наши документы</a></li>
    					<li><a href="#">О производстве</a></li>
    					<li><a href="#">Экологические стандарты</a></li>
@@ -292,7 +298,6 @@
    		  	</a>
    		  	<p>Создано в <a class="link-academy" href="https://up.htmlacademy.ru/htmlcss/18/">HTML Academy</a> @ 2017</p>
    		  </div>
-      </div>
  		</footer>
 
     <div class="modal modal-feedback">
