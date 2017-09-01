@@ -156,7 +156,7 @@ a {
 .site-navigation li {
 	margin-right: 28px;
 
-	line-height: 0;
+
 }
 
 /*.site-navigation a {
@@ -219,7 +219,7 @@ a {
 	background-color: #d07058;
 }
 
-/*Навигация пользователя*/
+/*Навигация пользователя*/ /*Нужна сортировка по кнопкам*/
 
 .user-navigation {
 	display: flex;
@@ -231,18 +231,92 @@ a {
 	line-height: 16px;
 	color: #ffffff;
 
-	outline: 2px solid green;
 }
+.user-navigation-item {
+	display: flex;
+	justify-content: flex-end;
 
-.user-navigation div{
-	margin-left: 27px;
+	margin-right: 10px;
 }
 
 .user-navigation-button {
-	text-decoration: none;
+	display: block;
+	position: relative;
 
-	background-color: #a1b4a9;
+	padding: 8px 0;
+
+	text-decoration: none;
+	text-align: center;
+
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 16px;
+
+	box-sizing: border-box;
+	z-index: 2;
 }
+
+.user-navigation-item:last-child {
+	margin-right: 0;
+}
+
+.icon-find{
+	width: 32px;
+	height: 32px;
+}
+
+.icon-log-in {
+	width: 92px;
+	height: 32px;
+	padding-left: 25px;
+}
+
+.icon-basket {
+	width: 117px;
+	height: 32px;
+	padding-left: 16px;
+}
+
+.icon-find svg {
+	position: absolute;
+	top: 7px;
+	left: 8px;
+}
+
+.icon-log-in svg,
+.icon-basket svg {
+	position: absolute;
+	top: 7px;
+	left: 15px;
+}
+
+/*ПОП Поиск*/
+.pop-search {
+	display: none;
+	position: absolute;
+	top: 59px;
+
+	color: #323232;
+
+	background-color: #f8f7f4;
+
+	border-radius: 10px;
+}
+
+.pop-search form {
+	width: 341px;
+	height: 84px;
+
+	padding: 21px 16px;
+
+	box-sizing: border-box;
+}
+
+.pop-search input {
+	width: 311px;
+	height: 44px;
+	border-radius: 10px;
+}
+
 
 .user-navigation-button:hover,
 .user-navigation-button:focus {
@@ -251,14 +325,27 @@ a {
 	background-color: #ffffff;
 }
 
+.user-navigation-button:hover svg path,
+.user-navigation-button:focus svg path,
+.user-navigation-button:hover svg circle,
+.user-navigation-button:focus svg circle{
+	fill: #000;
+}
+
+.user-navigation-button:hover .pop-search,
+.user-navigation-button:focus .pop-search {
+	display: block;
+}
+
 /*ПОПапы*/
+
 .pop {
 	color: #323232;
 
 	background-color: #f8f7f4;
 }
 
-/*ПОП Поиск*/
+
 /*ПОП Авторизация*/
 .entrance .password,
 .entrance .sign-in {
