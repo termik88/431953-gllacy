@@ -119,13 +119,11 @@ a {
 	display: flex;
 	flex-direction: column;
 
-	margin-top: 9px;
+	outline: 2px solid orange;
 }
 
-.logo-field {
-	margin-right: 24px;
-
-	line-height: 0;
+.logo-navigation {
+	outline: 2px solid green;
 }
 
 /*Главная навигация*/
@@ -138,9 +136,6 @@ a {
 
 .site-navigation,
 .catalog-sub-menu {
-	padding: 0;
-	margin: 0;
-
 	list-style: none;
 }
 
@@ -151,19 +146,13 @@ a {
 
 	font-weight: 700;
 	line-height: 18px;
+
+	outline: 2px solid green;
 }
 
 .site-navigation li {
-	margin-right: 28px;
-
-	line-height: 0;
+	margin-right: 27px;
 }
-
-/*.site-navigation a {
-	text-decoration: none;
-
-	border-bottom: 1px solid #ffffff;
-}*/
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -314,14 +303,11 @@ a {
 .work-phone {
 	width: 168px;
 	margin-left: auto;
-	text-align: right;
 
 	outline: 2px solid black;
 }
 
 .work-phone p {
-	margin: 0;
-
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 16px;
@@ -593,6 +579,7 @@ a {
 	color: #323232;
 }
 
+}
 
 /*Футер*/
 .main-footer {
