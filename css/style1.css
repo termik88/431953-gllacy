@@ -98,7 +98,6 @@ a {
 /*Общие*/
 .wrapper {
 	position: relative;
-
 }
 
 .container {
@@ -119,11 +118,18 @@ a {
 	display: flex;
 	flex-direction: column;
 
-	outline: 2px solid orange;
+	margin-top: 8px;
 }
 
 .logo-navigation {
-	outline: 2px solid green;
+	height: 64px;
+}
+
+.logo-field {
+	margin-right: 24px;
+	padding: 0;
+
+	line-height: 0;
 }
 
 /*Главная навигация*/
@@ -136,6 +142,9 @@ a {
 
 .site-navigation,
 .catalog-sub-menu {
+	padding: 0;
+	margin: 0;
+
 	list-style: none;
 }
 
@@ -146,13 +155,14 @@ a {
 
 	font-weight: 700;
 	line-height: 18px;
-
-	outline: 2px solid green;
 }
 
 .site-navigation li {
-	margin-right: 27px;
+	margin-right: 28px;
+
+
 }
+
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -208,7 +218,7 @@ a {
 	background-color: #d07058;
 }
 
-/*Навигация пользователя*/
+/*Навигация пользователя*/ /*Нужна сортировка по кнопкам*/
 
 .user-navigation {
 	display: flex;
@@ -220,17 +230,62 @@ a {
 	line-height: 16px;
 	color: #ffffff;
 
-	outline: 2px solid green;
 }
+.user-navigation-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 
-.user-navigation div{
-	margin-left: 27px;
+	border-radius: 16px;
+
+	margin-right: 10px;
 }
 
 .user-navigation-button {
-	text-decoration: none;
+	position: relative;
+	padding: 8px 0;
 
-	background-color: #a1b4a9;
+	text-decoration: none;
+	text-align: center;
+
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 16px;
+
+	box-sizing: border-box;
+}
+
+.user-navigation-item:last-child {
+	margin-right: 0;
+}
+
+.icon-find{
+	width: 32px;
+	height: 32px;
+}
+
+.icon-log-in {
+	width: 92px;
+	height: 32px;
+	padding-left: 25px;
+}
+
+.icon-basket {
+	width: 117px;
+	height: 32px;
+	padding-left: 16px;
+}
+
+.icon-find svg {
+	position: absolute;
+	top: 7px;
+	left: 8px;
+}
+
+.icon-log-in svg,
+.icon-basket svg {
+	position: absolute;
+	top: 7px;
+	left: 15px;
 }
 
 .user-navigation-button:hover,
@@ -240,15 +295,104 @@ a {
 	background-color: #ffffff;
 }
 
-/*ПОПапы*/
-.pop {
-	color: #323232;
-
-	background-color: #f8f7f4;
+.user-navigation-button:hover svg path,
+.user-navigation-button:focus svg path,
+.user-navigation-button:hover svg circle,
+.user-navigation-button:focus svg circle{
+	fill: #000;
 }
 
+.user-navigation-item:hover .pop,
+.user-navigation-item:focus .pop {
+	display: block;
+}
+
+/*ПОПапы*/
+.pop {
+	display: none;
+	position: absolute;
+	top: 48px;
+
+	color: #323232;
+
+	background-color: rgba(48,247,244, 0);
+}
+
+.pop form {
+	position: relative;
+	margin-top: 8px;
+	padding: 21px 16px;
+
+	background-color: #F8F7F4;
+
+	border-radius: 10px;
+
+	box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+
+	box-sizing: border-box;
+}
+
+.pop label {
+/*	display: none;*/
+	position: absolute;
+	top: 5px;
+	left: 31px;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 13px;
+}
+
+
+.pop input {
+	padding-left: 15px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #999999;
+	border: 1px solid #b2b2b2;
+}
+
+.pop input:hover {
+	border: 2px solid #9a9a9a;
+}
+
+.pop input:focus {
+	border: 2px solid #2e88e4;
+}
+
+.pop input:focus ~ label {
+	display: block;
+}
+
+.pop input:focus::-webkit-input-placeholder { color:transparent; }
+.pop input:focus::-moz-placeholder { color:transparent; }
+.pop input:focus::placeholder { color:transparent; }
+
 /*ПОП Поиск*/
+
+.pop-search {
+	height: 93px; /*высота не видимой части */
+}
+
+.pop-search form {
+	width: 341px;
+	height: 84px; /*высота видимой части*/
+}
+
+.pop-search input {
+	width: 311px;
+	height: 44px;
+	border-radius: 4px;
+	stroke: #d3d3d2;
+
+}
+
 /*ПОП Авторизация*/
+.pop-entrance {
+	width: 277px;
+	height: 234px;
+}
+
 .entrance .password,
 .entrance .sign-in {
 	color: #323232;
@@ -303,11 +447,14 @@ a {
 .work-phone {
 	width: 168px;
 	margin-left: auto;
+	text-align: right;
 
 	outline: 2px solid black;
 }
 
 .work-phone p {
+	margin: 0;
+
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 16px;
@@ -579,7 +726,6 @@ a {
 	color: #323232;
 }
 
-}
 
 /*Футер*/
 .main-footer {

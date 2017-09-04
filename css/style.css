@@ -163,11 +163,6 @@ a {
 
 }
 
-/*.site-navigation a {
-	text-decoration: none;
-
-	border-bottom: 1px solid #ffffff;
-}*/
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -313,54 +308,23 @@ a {
 }
 
 /*ПОПапы*/
-.pop {
+/*ПОП Поиск*/
+.pop-search {
 	display: none;
 	position: absolute;
-	top: 37px;
+	top: 48px;
+	height: 93px; /*высота не видимой части */
 
 	color: #323232;
 
 	background-color: rgba(48,247,244, 0);
 }
 
-.pop label {
-	display: none;
-	font-size: 13px;
-	font-weight: 500;
-	line-height: 13px;
-}
-
-
-.pop input {
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 24px;
-	color: #999999;
-	border: 1px solid #b2b2b2;
-}
-
-.pop input:hover {
-	border: 2px solid #9a9a9a;
-}
-
-.pop input:focus {
-	border: 2px solid #2e88e4;
-}
-
-.pop input:focus ~ label {
-	display: block;
-}
-
-/*ПОП Поиск*/
-
-.pop-search {
-	height: 104px;
-}
-
 .pop-search form {
+	position: relative;
 	width: 341px;
-	height: 84px;
-	margin-top: 19px;
+	height: 84px; /*высота видимой части*/
+	margin-top: 8px;
 	padding: 21px 16px;
 
 	background-color: #F8F7F4;
@@ -372,30 +336,154 @@ a {
 	box-sizing: border-box;
 }
 
+.pop-search label {
+	display: none;
+	position: absolute;
+	top: 5px;
+	left: 31px;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 13px;
+}
+
+
 .pop-search input {
 	width: 311px;
 	height: 44px;
+	padding-left: 15px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #999999;
+	border: 1px solid #b2b2b2;
 	border-radius: 4px;
-	stroke: #d3d3d2;
-
 }
+
+.pop-search input:hover {
+	border: 2px solid #9a9a9a;
+}
+
+.pop-search input:focus {
+	border: 2px solid #2e88e4;
+}
+
+.pop-search input:focus ~ label {
+	display: block;
+}
+
+.pop-search input:focus::-webkit-input-placeholder { color:transparent; }
+.pop-search input:focus::-moz-placeholder { color:transparent; }
+.pop-search input:focus::placeholder { color:transparent; }
 
 /*ПОП Авторизация*/
+
 .pop-entrance {
-	width: 277px;
-	height: 234px;
+	display: none;
+	position: absolute;
+	top: 48px;
+	height: 223px; /*высота не видимой части */
+
+	color: #323232;
+
+	background-color: rgba(48,247,244, 0);
 }
 
-.entrance .password,
-.entrance .sign-in {
+.pop-entrance form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 277px;
+	height: 214px; /*высота видимой части*/
+	margin-top: 8px;
+	padding: 20px 18px;
+
+	background-color: #F8F7F4;
+
+	border-radius: 10px;
+
+	box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+
+	box-sizing: border-box;
+}
+
+.email, .password, .log-in {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 20px;
+
+}
+
+.log-in {
+	margin-bottom: 0;
+}
+
+.log-in a {
+	padding-left: 10px;
+
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 24px;
 	color: #323232;
 }
 
-.entrance .password:hover,
+.email label, .password label {
+	position: absolute;
+	top: -16px;
+	left: 15px;
+}
+
+.pop-entrance button{
+	width: 100px;
+	height: 44px;
+}
+
+.log-in {
+	width: 130px;
+}
+
+.pop-entrance label {
+	display: none;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 13px;
+}
+
+.pop-entrance input {
+	width: 241px;
+	height: 44px;
+	padding-left: 15px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #999999;
+	border: 1px solid #b2b2b2;
+	border-radius: 4px;
+
+	box-sizing: border-box;
+}
+
+.pop-entrance input:hover {
+	border: 2px solid #9a9a9a;
+}
+
+.pop-entrance input:focus {
+	border: 2px solid #2e88e4;
+}
+
+.pop-entrance input:focus ~ label {
+	display: block;
+}
+
+.pop-entrance input:focus::-webkit-input-placeholder { color:transparent; }
+.pop-entrance input:focus::-moz-placeholder { color:transparent; }
+.pop-entrance input:focus::placeholder { color:transparent; }
+
+.entrance .reestablish:hover,
 .entrance .sign-in:hover,
-.entrance .password:focus,
+.entrance .reestablish:focus,
 .entrance .sign-in:focus,
-.entrance .password:active,
+.entrance .reestablish:active,
 .entrance .sign-in:active  {
 	color: #e84d37;
 }
