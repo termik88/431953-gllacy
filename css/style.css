@@ -270,6 +270,12 @@ body > input[type="radio"] {
 	margin-right: 28px;
 }
 
+/*.site-navigation a {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}*/
+
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -711,20 +717,21 @@ body > input[type="radio"] {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-
 	min-width: 880px;
 	margin: 0 1.0833333333333333333333333333333%;
-	margin-top: 41px;
-
-	outline: 3px solid blue;
+	margin-top: 32px;
 }
 
 .catalog-item {
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	flex-basis: 25%;
-	text-align: center;
+	margin-bottom: 26px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
-	outline: 1px red solid;
+	text-align: center;
 }
 
 .box-img,
@@ -737,7 +744,6 @@ body > input[type="radio"] {
 .icon-hit {
 	display: block;
 	position: absolute;
-
 	width: 61px;
 	height: 61px;
 
@@ -752,7 +758,7 @@ body > input[type="radio"] {
 
 .catalog .price {
 	position: absolute;
-	margin-top: -21.6%; /*78.4*/
+	margin-top: 70.4%; /*78.4*/
 
 	font-size: 45px;
 	font-weight: 700;
@@ -773,67 +779,164 @@ body > input[type="radio"] {
 }
 
 .catalog p {
-	margin-top: 10px;
 	height: 28,00456621004566%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+
 	font-weight: 400;
 }
 
 .button-product {
-	/*display: none;
-	position: absolute;
-	width: 100%;*/
-	padding-bottom: 5.432098765432099%;
+	display: none;
+	margin-top: auto;
+
+
+	padding-bottom: 7.72%;
 }
 	
 .product-view {
+	display: inline-block;
+	padding-left: 13px;
+	margin: 0;
+	width: 193px;
+	height: 44px;
+
 	white-space: nowrap;
+
+	box-sizing: border-box;
 }	
 
 .catalog-item:hover {
+	margin-bottom: -3.98%; /*Методом тыка=) Единствено подходящие*/
+
 	background: rgba(255, 255, 255, 0.2);
-	z-index: 1;
 	border-radius: 12px;
 	box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
-}/*
+
+	z-index: 1;
+}
 
 .catalog-item:hover .button-product {
 	display: block;
-	background: rgba(255, 255, 255, 0.2);
-	border-radius: 0 0 12px 12px;
-	box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
-}*/
+}
 
+.catalog p a:hover,
+.catalog p a:focus,
+.catalog p a:active  {
+	color: #ffbc9e;
+}
 
 /*Секция - О нас*/
 .about-us {
 	display: flex;
 	flex-direction: column;
+	min-height: 307px;
+	margin-bottom: 40px;
+	padding-left: 19px;
+	padding-right: 19px;
+
 	color: #323232;
 
 	background-image: url("../img/bg-waffle.jpg");
-	background-repeat: no-repeat;
 
-	border-radius: 12px;
+	border-radius: 15px;
 }
 
 .about-us h3 {
+	margin: 0;
+	padding-top: 24px;
+	padding-bottom: 10px;
+
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 30px;
 }
 
 .features-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin: 0;
 	padding: 0;
+
 	list-style: none;
 }
+
+.feature-item {
+	position: relative;
+	width: 42.32%;
+	padding-left: 56px;
+	padding-top: 13px;
+}
+
+.feature-item p {
+	margin: 0;
+}
+
+.ice-cream::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 49px;
+	height: 49px;
+
+	background-image: url("../img/ice-cream.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.eco::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 49px;
+	height: 49px;
+
+	background-image: url("../img/eco.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.cow::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 49px;
+	height: 49px;
+
+	background-image: url("../img/cow.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.thermometer::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 49px;
+	height: 49px;
+
+	background-image: url("../img/thermometer.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
 
 /*Секция - Блог и Подписка*/
 .blog-and-subscription {
 	display: flex;
 	justify-content: space-between;
+	height: 220px;
 
-	outline: 2px solid blue;
 }
 /*ПодСекция - Блог*/
 .blog {
@@ -843,8 +946,8 @@ body > input[type="radio"] {
 
 	background-image: url("../img/bg-strawberry.jpg");
 	background-repeat: no-repeat;
-
-	outline: 2px solid green;
+	background-position: -50px -230px;
+	border-radius: 15px;
 }
 
 .blog b {
