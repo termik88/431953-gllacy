@@ -8,6 +8,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Глейси, мороженое, магазин, сливочное, щербеты, фруктовый лед, мелорин">
     <meta name="description" content="Очень вкусное мороженое на любой вкус от магазина Глейси">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
   </head>
   <body>
 
@@ -29,7 +31,6 @@
             <ul class="site-navigation">
               <li class="site-navigation-catalog">
                 <a href="#">Каталог</a>
-                <!--
                 <ul class="catalog-sub-menu">
                   <li><a class="new-products" href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
@@ -37,7 +38,6 @@
                   <li><a href="#">Фруктовый лед</a></li>
                   <li><a href="#">Мелорин</a></li>
                 </ul>
-                -->
               </li>
               <li><a href="shipping_and_payment.html">Доставка и оплата</a></li>
               <li><a href="company.html">О Компании</a></li>
@@ -223,8 +223,44 @@
 
         <section class="map-feedback">
           <h2 class="visually-hidden">Где мы находимся и обратная связь с нами</h2>
-          <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504702529786" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+          
+          <div id="map"></div>
+            <script>
+              var map;
+              function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 16,
+                  center: new google.maps.LatLng(59.93926, 30.32915),
+                  mapTypeId: 'roadmap'
+                });
+
+                var iconBase = 'img/';
+                var icons = {
+                  gllacy: {
+                    icon: iconBase + 'pin.png'
+                  }
+                };
+
+                var features = [
+                  {
+                    position: new google.maps.LatLng(59.93866, 30.3229),
+                    type: 'gllacy'
+                  }
+                ];
+
+                // Create markers.
+                features.forEach(function(feature) {
+                  var marker = new google.maps.Marker({
+                    position: feature.position,
+                    icon: icons[feature.type].icon,
+                    map: map
+                  });
+                });
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0Bm_nmmWhk21_hMGchc5d2q70EU350QM&callback=initMap">
+            </script>
             <div class="feedback">        
               <p>Адрес главного офиса
               и офлайн магазина:
@@ -237,7 +273,7 @@
                 <a class="button" href="#">Форма обратной связи</a>
               </div>
             </div>
-          </div>
+    
         </section>
 
    		</main>
@@ -271,7 +307,10 @@
      			<div class="footer-info">
             <h3 class="visually-hidden">Информация</h3>
      				<ul>
-     					<li><a class="heart" href="#">Для поставщиков</a></li>
+     					<li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13"><path fill="#FFF" d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z"/></svg>
+                <a class="heart" href="#">Для поставщиков</a>
+              </li>
      					<li><a href="#">Наши документы</a></li>
      					<li><a href="#">О производстве</a></li>
      					<li><a href="#">Экологические стандарты</a></li>
@@ -309,5 +348,6 @@
     </div>
   </div>
 
+    <script src="/js/scripts.js"></script>
  	</body>
  </html>
