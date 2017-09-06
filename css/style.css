@@ -629,9 +629,8 @@ body > input[type="radio"] {
 .work-phone {
 	width: 168px;
 	margin-left: auto;
-	text-align: right;
 
-	outline: 2px solid black;
+	text-align: right;
 }
 
 .work-phone p {
@@ -830,10 +829,10 @@ body > input[type="radio"] {
 .about-us {
 	display: flex;
 	flex-direction: column;
-	min-height: 307px;
 	margin-bottom: 40px;
-	padding-left: 19px;
-	padding-right: 19px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 
 	color: #323232;
 
@@ -845,7 +844,6 @@ body > input[type="radio"] {
 .about-us h3 {
 	margin: 0;
 	padding-top: 24px;
-	padding-bottom: 10px;
 
 	font-size: 24px;
 	font-weight: 500;
@@ -855,6 +853,7 @@ body > input[type="radio"] {
 .features-list {
 	display: flex;
 	flex-wrap: wrap;
+
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
@@ -864,16 +863,17 @@ body > input[type="radio"] {
 
 .feature-item {
 	position: relative;
-	width: 42.32%;
-	padding-left: 56px;
+	max-width: 48.82%;
+	margin-top: 9px;
 	padding-top: 13px;
 }
 
 .feature-item p {
 	margin: 0;
+	padding-left: 56px;
 }
 
-.ice-cream::before {
+.ice-cream::after {
 	content: "";
 
 	position: absolute;
@@ -887,7 +887,7 @@ body > input[type="radio"] {
 	background-position: 0 0;
 }
 
-.eco::before {
+.eco::after {
 	content: "";
 
 	position: absolute;
@@ -901,7 +901,7 @@ body > input[type="radio"] {
 	background-position: 0 0;
 }
 
-.cow::before {
+.cow::after {
 	content: "";
 
 	position: absolute;
@@ -915,7 +915,7 @@ body > input[type="radio"] {
 	background-position: 0 0;
 }
 
-.thermometer::before {
+.thermometer::after {
 	content: "";
 
 	position: absolute;
@@ -936,11 +936,15 @@ body > input[type="radio"] {
 	display: flex;
 	justify-content: space-between;
 	height: 220px;
+	margin-bottom: 41px;
 
 }
 /*ПодСекция - Блог*/
 .blog {
-	width: 48.86561954624781849912739965096%;
+	display: flex;
+	flex-direction: column;
+	width: 48.86561%;
+	padding: 26px 19px;
 
 	color: #323232;
 
@@ -948,43 +952,120 @@ body > input[type="radio"] {
 	background-repeat: no-repeat;
 	background-position: -50px -230px;
 	border-radius: 15px;
+
+	box-sizing: border-box;
 }
 
 .blog b {
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .blog p {
+	max-width: 522px;
+	margin: 0;
+
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 30px;
 }
 .blog-info a {
+	padding-right: 2px;
 	color: #323232;
+	background-color: rgba(255,255,255,0.8);
 }
 
 .blog-info a:hover,
 .blog-info a:focus,
 .blog-info a:active  {
-	color: #ffbc9e;
+	color: #e84d37;
 }
 
 
 /*ПодСекция - Подписка*/
 .subscription {
-	width: 48.86561954624781849912739965096%;
-	padding: 6px;
-
-	color: #5a5a5a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48.86561%;
 
 	background-image: url("../img/bg-mail.jpg");
 	background-repeat: no-repeat;
-
-	outline: 2px solid green;
+	background-position: 0 0;
+	border-radius: 15px;
 }
 
 .subscription-email {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 97.857142857142857142857142857143%;
+	height: 210px;
+	padding: 32px 19px;
+
 	background-color: #f8f7f4;
+	border-radius: 15px;
+
+	box-sizing: border-box;
+}
+
+.subscription-email p {
+	margin: 0;
+
+	font-size: 16px;
+	font-weight: 400px;
+	line-height: 22px;
+	color: #5a5a5a;
+}
+
+.subscription-email form {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.subscription-email input[type="email"] {
+	width: 72.714285714285714285714285714286%;
+	height: 44px;
+	padding-left: 14px;
+
+	border: 1px solid #b2b2b2;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.subscription-email label {
+	display: none;
+	position: absolute;
+	top: -17px;
+	left: 13px;
+
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 13px;
+	color: #5b9ddf;
+}
+
+.subscription-email input[type="email"]:hover {
+	border: 2px solid #9a9a9a;
+}
+
+.subscription-email input[type="email"]:focus {
+	border: 2px solid #2e88e4;
+}
+
+.subscription-email input[type="email"]:focus ~ label {
+	display: block;
+}
+
+.subscription-email input[type="email"]:focus::-webkit-input-placeholder { color:transparent; }
+.subscription-email input[type="email"]:focus::-moz-placeholder { color:transparent; }
+.subscription-email input[type="email"]:focus::placeholder { color:transparent; }
+
+
+.subscription-email input[type="submit"] {
+	margin-left: 10px;
+	width: 128px;
+	height: 43px;
 }
 
 /*Секция Карта и Обратная связь*/
@@ -1007,26 +1088,43 @@ body > input[type="radio"] {
 
 /*ПодСекция - Обратная связь*/
 .feedback {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 302px;
 	height: 305px;
+	padding: 29px 26px;
 
 	margin: 62px 2.25% 62px auto;
 
 	background-color: #fefefe;
-	outline: 2px solid green;
+	border-radius: 15px;
+
+	box-sizing: border-box;
 }
 
 .feedback p {
+	margin: 0;
+
 	font-size: 14px;
 	line-height: 20px;
 	color: #323232;
 }
 
 .feedback p b {
+	display: block;
+
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
 	color: #323232;
+}
+
+.button-feedback a {
+	width: 251px;
+	height: 43px;
+
+	box-sizing: border-box;
 }
 
 
