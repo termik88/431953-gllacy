@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Глейси, мороженое, магазин, сливочное, щербеты, фруктовый лед, мелорин">
     <meta name="description" content="Очень вкусное мороженое на любой вкус от магазина Глейси">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
 
   </head>
   <body>
@@ -29,18 +29,32 @@
               </a>
             </div>
             <ul class="site-navigation">
-              <li class="site-navigation-catalog">
-                <a href="#">Каталог</a>
-                <ul class="catalog-sub-menu">
-                  <li><a class="new-products" href="#">Новинки</a></li>
-                  <li><a href="catalog.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
+              <li class="site-navigation-item sub-menu">
+                <a class="site-navigation-link" href="#">Каталог</a>
+                <ul class="sub-menu-list">
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link new-products" href="#">Новинки</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="#">Мелорин</a>
+                  </li>
                 </ul>
               </li>
-              <li><a href="shipping_and_payment.html">Доставка и оплата</a></li>
-              <li><a href="company.html">О Компании</a></li>
+              <li class="site-navigation-item  sub-menu">
+                <a class="site-navigation-link" href="shipping_and_payment.html">Доставка и оплата</a>
+              </li>
+              <li class="site-navigation-item  sub-menu">
+                <a class="site-navigation-link" href="company.html">О Компании</a>
+              </li>
             </ul>
             <div class="user-navigation">
               <div class="user-navigation-item search">
@@ -262,7 +276,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0Bm_nmmWhk21_hMGchc5d2q70EU350QM&callback=initMap">
             </script>
             <div class="feedback">        
-              <p>Адрес главного офиса
+              <p>Адрес главного офиса 
               и офлайн магазина:
               <b>ул. Большая Конюшенная
               19/8, Санкт-Петербург</b></p>
@@ -326,6 +340,7 @@
 
       <div class="modal modal-feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
+        <button class="modal-close" type="button">Закрыть</button>
         <form action="/echo" method="post">
          <h3>Мы обязательно вам ответим!</h3>
          <p>
@@ -342,7 +357,6 @@
          </p>
         <input class="button button-site button-send" type="submit" value="Отправить">
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
       </div>
 
     </div>
