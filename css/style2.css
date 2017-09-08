@@ -1308,6 +1308,9 @@ body > input[type="radio"] {
 /*ПодСекция - Подписка*/
 .subscription {
 	display: flex;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 	justify-content: center;
 	align-items: center;
 	width: 48.86561%;
