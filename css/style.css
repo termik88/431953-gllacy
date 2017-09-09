@@ -137,7 +137,7 @@ body > input[type="radio"] {
 
 .slider {
 	position: relative;
-	margin-bottom: 41px;
+	margin-bottom: 38px;
 	padding-top: 270px;
 
 	text-align: center;
@@ -276,9 +276,9 @@ body > input[type="radio"] {
 		display: -webkit-box;
 		display: -ms-flexbox;
 	display: flex;
-		-webkit-box-align: center;
+/*		-webkit-box-align: center;
 		-ms-flex-align: center;
-	align-items: center;
+	align-items: center;*/
 }
 
 
@@ -303,6 +303,7 @@ body > input[type="radio"] {
 
 .site-navigation-item {
 	border-radius: 22px;
+	margin-top: 13px;
 }
 
 .site-navigation-link {
@@ -460,13 +461,14 @@ body > input[type="radio"] {
 		-ms-flex-align: flex-end;
 	align-items: flex-end;
 	margin-right: 10px;
+	margin-top: 13px;
 
 	border-radius: 16px;
 }
 
 .user-navigation-button {
 	position: relative;
-	padding: 8px 0;
+	padding: 10px 0;
 
 	text-decoration: none;
 	text-align: center;
@@ -907,7 +909,6 @@ body > input[type="radio"] {
 }
 
 .work-phone b {
-	padding-top: 3px;
 
 	font-size: 22px;
 	font-weight: 700;
@@ -925,7 +926,8 @@ body > input[type="radio"] {
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-bottom: 30px;
+		-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .special-offers h3 {
@@ -953,8 +955,10 @@ body > input[type="radio"] {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 	flex-direction: column;
-	width: 48.86561954624781849912739965096%;
+	min-width: 48.86561954624781849912739965096%;
+	max-width: 48.86561954624781849912739965096%;
 	min-height: 228px;
+	margin-bottom: 38px;
 	padding: 15px 20px 25px 20px; 
 
 	border-radius: 12px;
@@ -1120,7 +1124,7 @@ body > input[type="radio"] {
 	margin-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 25px;
+	padding-bottom: 18px;
 
 	color: #323232;
 
@@ -1232,7 +1236,7 @@ body > input[type="radio"] {
 		-ms-flex-pack: justify;
 	justify-content: space-between;
 	height: 220px;
-	margin-bottom: 41px;
+	margin-bottom: 40px;
 
 }
 /*ПодСекция - Блог*/
@@ -1263,7 +1267,7 @@ body > input[type="radio"] {
 }
 
 .blog p {
-	max-width: 522px;
+	width: 280px;
 	margin: 0;
 
 	font-size: 24px;
@@ -1419,9 +1423,9 @@ body > input[type="radio"] {
 	        justify-content: space-between;
 	width: 302px;
 	/*height: 305px;*/
-	padding: 25px 26px;
+	padding: 28px 26px;
 	right: 2.25%;
-	top: 15%;
+	top: 14.5%;
 
 	background-color: #fefefe;
 	border-radius: 15px;
@@ -1452,7 +1456,7 @@ body > input[type="radio"] {
 
 .feddback-time-work {
 	margin: 0;
-	margin-bottom: 28px;
+	margin-bottom: 24px;
 
 	font-size: 14px;
 	font-weight: 400;
@@ -1491,6 +1495,8 @@ body > input[type="radio"] {
 	    -ms-flex-align: center;
 	        align-items: center;
 	height: 95px;
+
+	border-top: 1px solid rgba(255,255,255, 0.3);
 }
 
 /*Социальные кнопки*/
@@ -2299,10 +2305,7 @@ body > input[type="radio"] {
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 18px;
-
 	list-style: none;
-
-	outline: 1px red solid;
 }
 
 .arrow-left {
