@@ -984,11 +984,13 @@ body > input[type="radio"] {
 }
 
 .special-offer:first-of-type {
+	background-color: #5e0f1f;
 	background-image: url("../img/bg-raspberry.jpg");
 	background-repeat: no-repeat;
 }
 
 .special-offer:last-of-type {
+	background-color: #3e2519;
 	background-image: url("../img/bg-chocolate.jpg");
 	background-repeat: no-repeat;
 }
@@ -1151,6 +1153,7 @@ body > input[type="radio"] {
 
 	color: #323232;
 
+	background-color: #ede0c4;
 	background-image: url("../img/bg-waffle.jpg");
 
 	border-radius: 15px;
@@ -1276,6 +1279,7 @@ body > input[type="radio"] {
 
 	color: #323232;
 
+	background-color: #ffffff;
 	background-image: url("../img/bg-strawberry.jpg");
 	background-repeat: no-repeat;
 	background-position: -50px -230px;
@@ -1433,6 +1437,8 @@ body > input[type="radio"] {
 	margin: 0 auto;
 	height: 430px;
 	width: 100%;
+
+	background-image: url("../img/map.png");
 }
 
 /*ПодСекция - Обратная связь*/
@@ -1760,9 +1766,9 @@ body > input[type="radio"] {
 .modal-feedback {
 	display: none;
 	position: fixed;
-	top: 338px;
+	top: 325px;
 	left: 50%;
-	margin-left: -230px;
+	margin-left: -237px;
 	padding: 20px 25px;
 
 	width: 430px;
@@ -1886,6 +1892,7 @@ body > input[type="radio"] {
 	width: 428px;
 	height: 155px;
 	margin-bottom: 25px;
+	padding-top: 10px;
 	padding-left: 15px;
 
 	font-size: 16px;
